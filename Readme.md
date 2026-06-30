@@ -51,7 +51,7 @@ CustomerChurnLab/
 
 ### 1. Repository klonen
 ```bash
-git clone [GITHUB-REPO-LINK]
+git clone https://github.com/Semineytor4/PolicyPilot.git
 cd PolicyPilot
 ```
 
@@ -60,17 +60,19 @@ cd PolicyPilot
 pip install -r requirements.txt
 ```
 
-### 3. Modell trainieren und Plots generieren
-```bash
-python C_Evaluation_Final.py
-```
-→ Erstellt `models/logreg_churn_pipeline.pkl` und alle Plots in `plots/`
-
-### 4. Streamlit-App starten
+### 3. Streamlit-App starten
 ```bash
 streamlit run app.py
 ```
-→ App öffnet sich unter http://localhost:8501
+→ App öffnet sich automatisch unter **http://localhost:8501**
+
+> Das trainierte Modell (`models/logreg_churn_pipeline.pkl`) liegt bereits im Repo –
+> kein weiterer Schritt nötig.
+
+### Optional: Evaluation neu ausführen (alle Plots & Modell neu generieren)
+```bash
+python C_Evaluation_Final.py
+```
 
 ---
 
