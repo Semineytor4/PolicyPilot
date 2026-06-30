@@ -1,0 +1,176 @@
+{
+  "cv_results": [
+    {
+      "Modell": "LogReg",
+      "ROC-AUC": 0.8459,
+      "F1": 0.6279,
+      "Precision": 0.5165,
+      "Recall": 0.8013,
+      "PR-AUC": 0.66
+    },
+    {
+      "Modell": "RandomForest",
+      "ROC-AUC": 0.8226,
+      "F1": 0.6009,
+      "Precision": 0.566,
+      "Recall": 0.6408,
+      "PR-AUC": 0.61
+    },
+    {
+      "Modell": "GradBoost",
+      "ROC-AUC": 0.8478,
+      "F1": 0.5902,
+      "Precision": 0.6606,
+      "Recall": 0.5338,
+      "PR-AUC": 0.6671
+    },
+    {
+      "Modell": "Dummy (MostFrequent)",
+      "ROC-AUC": 0.5,
+      "F1": 0.0,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "PR-AUC": 0.2654
+    }
+  ],
+  "test_results": [
+    {
+      "Modell": "LogReg",
+      "F1": 0.6136,
+      "Precision": 0.5043,
+      "Recall": 0.7834,
+      "ROC-AUC": 0.8413,
+      "PR-AUC": 0.6326
+    },
+    {
+      "Modell": "GradBoost",
+      "F1": 0.5895,
+      "Precision": 0.6735,
+      "Recall": 0.5241,
+      "ROC-AUC": 0.8434,
+      "PR-AUC": 0.6641
+    },
+    {
+      "Modell": "RandomForest",
+      "F1": 0.5854,
+      "Precision": 0.5521,
+      "Recall": 0.623,
+      "ROC-AUC": 0.8218,
+      "PR-AUC": 0.6038
+    },
+    {
+      "Modell": "Dummy (MostFrequent)",
+      "F1": 0.0,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "ROC-AUC": 0.5,
+      "PR-AUC": 0.2654
+    }
+  ],
+  "best_model": "LogReg",
+  "best_model_test": {
+    "Modell": "LogReg",
+    "F1": 0.6136,
+    "Precision": 0.5043,
+    "Recall": 0.7834,
+    "ROC-AUC": 0.8413,
+    "PR-AUC": 0.6326
+  },
+  "confusion_matrix": [
+    [
+      747,
+      288
+    ],
+    [
+      81,
+      293
+    ]
+  ],
+  "n_train": 5634,
+  "n_test": 1409,
+  "churn_rate": 26.5,
+  "top_features_logreg": [
+    {
+      "Feature": "tenure",
+      "Koeffizient": -1.1235888074251543
+    },
+    {
+      "Feature": "Contract_Two year",
+      "Koeffizient": -0.7812566697485679
+    },
+    {
+      "Feature": "InternetService_Fiber optic",
+      "Koeffizient": 0.7053364815547497
+    },
+    {
+      "Feature": "MonthlyCharges",
+      "Koeffizient": -0.6635813703896308
+    },
+    {
+      "Feature": "Contract_Month-to-month",
+      "Koeffizient": 0.6633988113477177
+    },
+    {
+      "Feature": "InternetService_DSL",
+      "Koeffizient": -0.6210094851782081
+    },
+    {
+      "Feature": "TotalCharges",
+      "Koeffizient": 0.4572105464813084
+    },
+    {
+      "Feature": "StreamingMovies_Yes",
+      "Koeffizient": 0.27497839252630957
+    },
+    {
+      "Feature": "DeviceProtection_No internet service",
+      "Koeffizient": -0.27456847321565714
+    },
+    {
+      "Feature": "InternetService_No",
+      "Koeffizient": -0.27456847321565714
+    }
+  ],
+  "top_features_gradboost": [
+    {
+      "Feature": "Contract_Month-to-month",
+      "Importance": 0.379963887505438
+    },
+    {
+      "Feature": "tenure",
+      "Importance": 0.13868176032439136
+    },
+    {
+      "Feature": "InternetService_Fiber optic",
+      "Importance": 0.08654205236573605
+    },
+    {
+      "Feature": "TotalCharges",
+      "Importance": 0.08627505211187526
+    },
+    {
+      "Feature": "MonthlyCharges",
+      "Importance": 0.0816820292677664
+    },
+    {
+      "Feature": "OnlineSecurity_No",
+      "Importance": 0.06814172857466136
+    },
+    {
+      "Feature": "PaymentMethod_Electronic check",
+      "Importance": 0.04430862835324837
+    },
+    {
+      "Feature": "TechSupport_No",
+      "Importance": 0.037883940694800146
+    },
+    {
+      "Feature": "PaperlessBilling_Yes",
+      "Importance": 0.01161199232669971
+    },
+    {
+      "Feature": "MultipleLines_No",
+      "Importance": 0.010302039974783872
+    }
+  ]
+}
